@@ -1,0 +1,15 @@
+---
+- name: Install necessary packages
+  apt: name={{ item }} state=latest update_cache=yes cache_valid_time=3600
+  with_items:
+    - build-essential
+    - git
+    - ruby
+    - rubygems
+    - ruby-dev
+    - software-properties-common
+    - tar
+    - wget
+
+- name: install gem occi
+  gem: name=occi-cli state=latest
