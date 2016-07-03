@@ -38,4 +38,4 @@
     - { src: 'vomsdir', dest: '/etc/grid-security/' }
 
 - name: install gem occi
-  gem: name=occi-cli state=latest
+  command: gem install occi-cli
