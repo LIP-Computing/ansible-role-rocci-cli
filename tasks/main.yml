@@ -20,16 +20,13 @@
     - curl
     - fetch-crl
     - git
-    - occi-cli
+    - ruby
+    - ruby-dev
+    - rubygems-integration
     - software-properties-common
     - tar
     - voms-clients3
     - wget
-
-#    - ruby
-#    - ruby-dev
-#    - rubygems-integration
-
 
 - name: run fetch-crl
   command: fetch-crl -v
@@ -40,5 +37,5 @@
     - { src: 'vomses', dest: '/etc/' }
     - { src: 'vomdir', dest: '/etc/grid-security/' }
 
-#- name: install gem occi
-#  gem: name=occi-cli state=latest
+- name: install gem occi
+  gem: name=occi-cli state=latest
