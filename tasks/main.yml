@@ -1,15 +1,35 @@
 ---
+- name: add key of EGI CAs and UMD
+  apt_key: url={{ item }} state=present
+  with_items:
+    - https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3
+    - http://repository.egi.eu/sw/production/umd/UMD-DEB-PGP-KEY
+
+- name: add EGI CAs and UMD repository
+  apt_repository: repo={{ item }} state=present
+  with_items:
+    - 'deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core'
+    - 'deb http://repository.egi.eu/sw/production/umd/3/debian/ squeeze main'
+    - 'deb http://repository.egi.eu/sw/production/umd/3/debian/ squeeze-updates main'
+
 - name: Install necessary packages
   apt: name={{ item }} state=latest update_cache=yes cache_valid_time=3600
   with_items:
     - build-essential
+    - ca-policy-egi-core
+    - curl
+    - fetch-crl
     - git
     - ruby
     - ruby-dev
     - rubygems-integration
     - software-properties-common
     - tar
+    - voms-clients3
     - wget
+
+- name: run fetch-crl
+  command: fetch-crl -v
 
 - name: install gem occi
   gem: name=occi-cli state=latest
