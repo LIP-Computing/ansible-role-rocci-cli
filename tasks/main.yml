@@ -5,8 +5,8 @@
     - build-essential
     - git
     - ruby
-    - rubygems
     - ruby-dev
+    - rubygems-integration
     - software-properties-common
     - tar
     - wget
