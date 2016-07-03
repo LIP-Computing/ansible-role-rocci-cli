@@ -31,5 +31,11 @@
 - name: run fetch-crl
   command: fetch-crl -v
 
+- name: copy vomses and vomsdir
+  copy: src={{ item.src }} dest={{ item.dest }}
+  with_items:
+    - { src: 'vomses', dest: '/etc/' }
+    - { src: 'vomdir', dest: '/etc/grid-security/' }
+
 - name: install gem occi
   gem: name=occi-cli state=latest
