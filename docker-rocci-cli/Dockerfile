@@ -1,4 +1,4 @@
-# docker build -t ambertools-oneclient .
+# docker build -t rocci-cli-ubuntu .
 FROM ubuntu:14.04
 MAINTAINER Mario David <mariojmdavid@gmail.com>
 LABEL description="Container image to run rOCCI cli"
