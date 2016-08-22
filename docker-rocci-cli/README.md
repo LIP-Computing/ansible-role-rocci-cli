@@ -1,4 +1,5 @@
 # rOCCI Client tool
+[![](https://images.microbadger.com/badges/image/mariojmdavid/rocci-cli.svg)](https://microbadger.com/images/mariojmdavid/rocci-cli "Get your own image badge on microbadger.com")
 
 ## Introduction
 The docker image is Ubuntu 14.04 LTS with rOCCI client tool

@@ -1,4 +1,4 @@
-# docker build -t rocci-cli-ubuntu .
+# docker build --rm -t rocci-cli .
 FROM ubuntu:14.04
 MAINTAINER Mario David <mariojmdavid@gmail.com>
 LABEL description="Container image to run rOCCI cli"
