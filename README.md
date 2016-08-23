@@ -1,5 +1,5 @@
-Role Name
-=========
+LIP-Computing.rocci-cli
+=======================
 
 Deploy rOCCI client tool
 
@@ -31,3 +31,8 @@ Author Information
 ------------------
 
 Mario David: <mariojmdavid@gmail.com>
+
+LIP Lisbon: http://www.lip.pt
+
+Indigo DataCloud: https://www.indigo-datacloud.eu/
+

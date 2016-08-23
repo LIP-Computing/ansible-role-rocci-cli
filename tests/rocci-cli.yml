@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - rocci-cli
+    - LIP-Computing.rocci-cli
