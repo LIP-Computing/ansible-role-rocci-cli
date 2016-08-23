@@ -1,3 +1,5 @@
+[![License](http://img.shields.io/:license-apache-blue.svg?style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0.html)
+
 LIP-Computing.rocci-cli
 =======================
 
@@ -9,18 +11,25 @@ Requirements
 Role Variables
 --------------
 
-Dependencies
-------------
-
-
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+The role deployes the rOCCI client tool, it deploys several VOs of the
+EGI.
 
     - hosts: servers
       roles:
          - LIP-Computing.rocci-cli
+
+References
+----------
+
+* Open Cloud Computing Interface (OCCI)
+** http://occi-wg.org/
+* EGI Foundation:
+** http://www.egi.eu
+* EGI Federated Cloud Infrastructure:
+** http://www.egi.eu/infrastructure/cloud/
 
 License
 -------
@@ -35,4 +44,3 @@ Mario David: <mariojmdavid@gmail.com>
 LIP Lisbon: http://www.lip.pt
 
 Indigo DataCloud: https://www.indigo-datacloud.eu/
-
